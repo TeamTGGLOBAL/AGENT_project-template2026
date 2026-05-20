@@ -64,7 +64,3 @@ template/
         ├── phase1-approach-target.md
         └── phase1-hearing-questions.md
 ```
-
-## 参照元プロジェクト
-
-`AGENT_Sales-Seafood-Taiwan2026` — 台湾水産企業への営業プロジェクト。このフレームワークの原型。

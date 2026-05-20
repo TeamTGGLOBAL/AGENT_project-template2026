@@ -129,11 +129,9 @@
 
 ## TGプリンシパル
 
-以下のディレクトリを「TGプリンシパル」と呼びます。
+「TGプリンシパル」とは、TG GLOBALの社内戦略ドキュメント群です。
 
-`C:\Users\TGグローバル\Desktop\Warp_Repository\standard-seafood-wholesale-overseas`
-
-このフォルダには以下が含まれます。
+以下が含まれます。
 
 - Mission / Vision / Value
 - 経営戦略
@@ -141,10 +139,10 @@
 - ブランド思想
 - 社内標準
 
-ユーザーが以下のように言った場合は、このフォルダを優先的に参照してください。
+ユーザーが以下のように言った場合は、TGプリンシパルを優先的に参照してください。
 
 - 「TGプリンシパルを参照して」
 - 「TGプリンシパルではどう定義してる？」
 - 「TGプリンシパル基準で考えて」
 
-TGプリンシパルを使用する際は、ターミナルでclaudeを起動したあとに、`@C:\Users\TGグローバル\Desktop\Warp_Repository\standard-seafood-wholesale-overseas` を実行してください。
+TGプリンシパルを使用する際は、ターミナルでclaudeを起動したあとに、`@[TGプリンシパルのローカルパス]` を実行してください。パスは社内で管理しています。
