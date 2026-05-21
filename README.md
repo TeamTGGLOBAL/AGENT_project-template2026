@@ -48,9 +48,11 @@ TG GLOBALのAI×営業プロジェクト立ち上げフレームワーク。
 ## ファイル構成
 
 ```
+WORKFLOW.md                         # Case○○○セットアップ手順（9ステップ）
 template/
 ├── pattern-A/                      # 穴埋め式（[PLACEHOLDER]形式）
 │   ├── CLAUDE.md
+│   ├── MEMORY.md                   # git管理メモリテンプレート
 │   └── docs/
 │       ├── phase0-intelligence.md
 │       ├── phase1-weapons.md
@@ -58,9 +60,14 @@ template/
 │       └── phase1-hearing-questions.md
 └── pattern-B/                      # 説明と空欄式（<!--ガイド-->形式）
     ├── CLAUDE.md
+    ├── MEMORY.md                   # git管理メモリテンプレート（コメント付き）
     └── docs/
         ├── phase0-intelligence.md
         ├── phase1-weapons.md
         ├── phase1-approach-target.md
         └── phase1-hearing-questions.md
 ```
+
+## 新規案件を始めるとき
+
+`WORKFLOW.md` を読んでから作業を開始する。9ステップで Case○○○ のセットアップ（README・CLAUDE.md・MEMORY.md・docs/）が完成する。
