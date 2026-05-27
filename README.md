@@ -40,27 +40,43 @@ TG GLOBALのAI×営業プロジェクト立ち上げフレームワーク。
 
 ## テンプレートの選び方
 
-| パターン | 向いている状況 | 場所 |
-|---|---|---|
-| **A：穴埋め式** | ターゲット・商材がすでに決まっている | `template/pattern-A/` |
-| **B：説明と空欄式** | 商材・国・業種が異なる。まず思考を整理したい | `template/pattern-B/` |
+| パターン | 向いている状況 | 所要時間 | 場所 |
+|---|---|---|---|
+| **C：個別商談Case（推奨）** | 展示会・商談で接触した見込み客を1社ずつ管理したい | **10〜15分** | `template/pattern-C/` |
+| **A：穴埋め式** | 新市場全体の戦略を立てる。ターゲット・商材が決まっている | 60〜90分 | `template/pattern-A/` |
+| **B：説明と空欄式** | 新市場全体の戦略。商材・国・業種が異なる。まず思考を整理したい | 60〜90分 | `template/pattern-B/` |
+
+### Pattern-C を使うとき（最速）
+
+```
+"case-intake.md を読んで、新しいCaseを作成してください。"
+```
+
+Claude Codeが12問を順に聞き、すべての回答からCaseを自動生成します。
 
 ## ファイル構成
 
 ```
-WORKFLOW.md                         # Case○○○セットアップ手順（9ステップ）
+WORKFLOW.md                         # Case○○○セットアップ手順（ステップ0〜9）
+case-intake.md                      # ★ 個別商談Case作成の質問定義 + Claude指示書
 template/
-├── pattern-A/                      # 穴埋め式（[PLACEHOLDER]形式）
+├── pattern-C/                      # ★ 個別商談Case専用（10〜15分で生成）
+│   ├── CLAUDE.md                   # 1対1商談管理テンプレート
+│   ├── MEMORY.md                   # 別PC引き継ぎ用メモリテンプレート
+│   └── docs/
+│       ├── phase0-intelligence.md  # 接触記録・初期情報
+│       └── followup-plan.md        # 72時間以内フォロー計画
+├── pattern-A/                      # 穴埋め式（市場戦略Case用）
 │   ├── CLAUDE.md
-│   ├── MEMORY.md                   # git管理メモリテンプレート
+│   ├── MEMORY.md
 │   └── docs/
 │       ├── phase0-intelligence.md
 │       ├── phase1-weapons.md
 │       ├── phase1-approach-target.md
 │       └── phase1-hearing-questions.md
-└── pattern-B/                      # 説明と空欄式（<!--ガイド-->形式）
+└── pattern-B/                      # 説明と空欄式（市場戦略Case用）
     ├── CLAUDE.md
-    ├── MEMORY.md                   # git管理メモリテンプレート（コメント付き）
+    ├── MEMORY.md
     └── docs/
         ├── phase0-intelligence.md
         ├── phase1-weapons.md
